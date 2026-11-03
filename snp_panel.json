@@ -1,0 +1,47 @@
+{
+  "_note": "Exploratory evidence catalogue. Only SNPs with weight > 0 affect the score. weight 1.0 on a single scored SNP is a normalisation, not a measured effect size. Additive allele counting is an assumption.",
+  "panel": [
+    {
+      "gene": "PPARG", "rsid": "rs1801282", "risk_allele": "C", "weight": 1.0,
+      "weight_source": "normalisation (single scored SNP); not an effect size",
+      "model_assumed": "additive (0/1/2 copies of C)", "verified": true,
+      "evidence": "G (Ala12) protective, C (Pro12) risk-direction. Meta-analyses: PMID 22527903 (He 2012), PMID 22564702 (OR 0.75 for Ala), PMID 23748472 (Indian, 450 cases/300 controls, G vs C OR 0.55 reported); PMC4694232 (updated meta-analysis, G protective, CG vs CC OR 0.79). PMID 26770332 not confirmed.",
+      "conflicts": "Single studies null or opposite (US cohort PMC1925257 null; Egyptian PMID 28698741 reported higher G in cases, unconfirmed). Effect modest and population-dependent.",
+      "note": "Rechecked from independent search results; direction consistent across meta-analyses."
+    },
+    {
+      "gene": "FTO", "rsid": "rs9939609", "risk_allele": "A", "weight": 0.0,
+      "weight_source": "set to 0: PCOS association not replicated in Indian samples and largely BMI-mediated",
+      "model_assumed": "n/a (not scored)", "verified": false,
+      "evidence": "A is provisional risk-direction only. Supports A: Liu 2017 meta-analysis (PMID 28826396, A vs T OR 1.36), Li 2013 (PMID 23840863), Sri Lankan study (PMID 32050935, AA over-represented in cases), South Indian trend (OR 1.30, 0.83-2.02, not significant). Does not support: Cai 2014 (PMID 24466303, no overall association after BMI adjustment); Zhang & Yu 2024 (PMID 39143730) reports T vs A OR 1.19 with wording that conflicts with the other meta-analyses.",
+      "indian_evidence": "Gujarat 62 PCOS/52 controls (Chaudhary 2023, PMC10500741): T vs A OR 0.90 (0.43-1.83), not significant. South India 100 PCOS/70 controls (Naghshband & Malini 2022, doi 10.1186/s43042-022-00236-6): not associated with PCOS; linked to BMI, fasting glucose, testosterone.",
+      "gnomad_v4_1_2_A_freq": {"global": 0.4082, "south_asian": 0.3148, "east_asian": 0.1548},
+      "note": "dbSNP ref T, alt A, chr16:53786615 (GRCh38), intron. A is the usual BMI/obesity risk allele. A/T SNPs can be reported on either strand, so check the coded allele in each paper. Not used in score."
+    },
+    {
+      "gene": "INSR", "rsid": "rs1799817", "risk_allele": "T", "weight": 0.0,
+      "weight_source": "set to 0: evidence is dominant-model, population- and BMI-subgroup-specific; cannot be converted to a per-allele weight",
+      "model_assumed": "dominant (CT+TT vs CC), not additive", "verified": false,
+      "evidence": "Supports T: Indian lean-women study (PMID 19211708; CT+TT linked to PCOS in lean women, p=0.004; fasting insulin, HOMA-IR); Saudi study (Daghestani 2020, PMC7526013; T freq 0.306 vs 0.174); Indian GWAS-variant study PMID 31837364.",
+      "conflicts": "No association in Kashmiri women (PMID 34912452) and South Indian women (Thangavelu); Chinese family TDT null (PMC3118173).",
+      "note": "Exploratory only."
+    },
+    {
+      "gene": "INSR", "rsid": "rs2059807", "risk_allele": null, "weight": 0.0,
+      "weight_source": "no risk allele assigned",
+      "model_assumed": "n/a", "verified": false,
+      "evidence": "PMID 31837364 (Indian, 253 cases/308 controls; effect allele not stated in abstract); PMC4346843 meta-analysis (C vs T).",
+      "conflicts": "Papers use different strand/notation (T/C, A/G); Han Chinese TDT null.",
+      "note": "Normalise strand and genome build before assigning a risk allele."
+    }
+  ],
+  "dropped": [
+    {"gene": "TPH2", "rsid": "rs4570625", "reason": "No convincing variant-specific PCOS association paper found."},
+    {"gene": "ESR1", "rsid": "rs2234693", "reason": "Meta-analysis null (PMID 34671317, OR 1.07, 0.98-1.18)."},
+    {"gene": "ESR1", "rsid": "rs9340799", "reason": "Meta-analysis null (PMID 34671317, OR 0.99, 0.69-1.43)."}
+  ],
+  "candidates": [
+    {"gene": "KISS1", "rsid": "rs4889", "risk_allele": "C", "comparison_allele": "G", "source": "PMID 39126595 (allele summary from user)", "used_in_score": false},
+    {"gene": "KISS1", "rsid": "rs372790354", "risk_allele": "A", "comparison_allele": "G", "source": "PMID 39126595; OR mapping to this SNP not confirmed", "used_in_score": false}
+  ]
+}
