@@ -1,0 +1,24 @@
+{
+  "_note": "EXPLORATORY. Phase- and genotype-based adjustment is a product rule, not clinical evidence. Full literature in parameters_evidence.json.",
+  "base_carb_pct": 45,
+  "carb_floor_pct": 35,
+  "max_carb_reduction_pct": 10,
+  "base_fiber_g": 25,
+  "max_extra_fiber_g": 0,
+  "base_protein_g_per_kg": 0.8,
+  "max_extra_protein_g_per_kg": 0,
+  "high_insulin_uIU_mL": null,
+  "insulin_extra_carb_reduction_pct": 0,
+  "provenance": {
+    "base_carb_pct": "Control diets ~45% energy from carbohydrate; low-carb defined as <45% (PMID 31885557, 8 RCTs, 327 women with PCOS). Study definition, not a universal target.",
+    "carb_floor_pct": "ASSUMPTION. Keeps output near the studied range.",
+    "max_carb_reduction_pct": "ASSUMPTION (exploratory product rule). No source for genotype- or phase-based reduction.",
+    "base_fiber_g": "General adult reference: 25 g/day for women 19-50 (DRI). Not PCOS-specific.",
+    "max_extra_fiber_g": "0 = no phase adjustment. Any value above 0 is an assumption.",
+    "base_protein_g_per_kg": "General adult RDA 0.8 g/kg/day. Not PCOS-specific.",
+    "max_extra_protein_g_per_kg": "0 = no phase adjustment. Any value above 0 is an assumption.",
+    "high_insulin_uIU_mL": "null: no universal insulin/HOMA-IR cutoff is supported (2023 international PCOS guideline; 75 g OGTT preferred). Population-specific cutoffs, e.g. Korean HOMA-IR in PMID 31542165, must not be applied universally.",
+    "insulin_extra_carb_reduction_pct": "0 while the insulin threshold is null."
+  },
+  "guideline_context": "International PCOS guideline (PMID 32452622): lifestyle first-line, no specific diet composition recommended. PMID 24914605: low-carb adds ~1-5% weight loss vs standard diet, no consistent extra endocrine benefit. PMID 23420000: weight loss helps regardless of diet composition."
+}
