@@ -49,7 +49,7 @@ Full evidence, conflicts and PMIDs are in `snp_panel.json`.
 | `run_demo.py` | Runs the patients and prints a day 1-28 table |
 | `annotate_snps.py` | Fetches public SNP info from Ensembl into `snp_annotation.csv` |
 | `api.py` | FastAPI endpoint `POST /recommend` |
-| `tests/test_engine.py` | 18 tests for phase mapping and rule behaviour |
+| `test/test_engine.py` | 18 tests for phase mapping and rule behaviour |
 | `requirements.txt` | Python packages |
 
 ## Quick start
