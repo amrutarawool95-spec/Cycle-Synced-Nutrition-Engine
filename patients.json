@@ -1,0 +1,8 @@
+[
+  {"id": "P001_synthetic_high_risk", "genotypes": {"rs1801282": "CC", "rs9939609": "AA"}, "fasting_insulin_uIU_mL": 11.5, "cycle_day": 22, "cycle_length": 28},
+  {"id": "P002_synthetic_low_risk", "genotypes": {"rs1801282": "GG", "rs9939609": "AA"}, "fasting_insulin_uIU_mL": 5.0, "cycle_day": 22, "cycle_length": 28},
+  {"id": "P003_synthetic_high_risk_cycle_unknown", "genotypes": {"rs1801282": "CC"}, "fasting_insulin_uIU_mL": null, "cycle_day": null, "cycle_length": null},
+  {"id": "P004_synthetic_mixed_follicular", "genotypes": {"rs1801282": "CG"}, "fasting_insulin_uIU_mL": 6.0, "cycle_day": 8, "cycle_length": 28},
+  {"id": "P005_synthetic_32_day_cycle", "genotypes": {"rs1801282": "CC"}, "fasting_insulin_uIU_mL": null, "cycle_day": 25, "cycle_length": 32},
+  {"id": "P006_synthetic_no_genotype", "genotypes": {}, "fasting_insulin_uIU_mL": null, "cycle_day": 22, "cycle_length": 28}
+]
